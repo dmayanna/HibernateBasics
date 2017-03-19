@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 @Entity
 @Table(name="Empoyees")
-public class Employee1 {
+public class Employee {
 	@Column(name="name")
 	String first_name;
 	@Column(name="city")
@@ -19,7 +19,7 @@ public class Employee1 {
 	@Column(name="emp_id")
 	@GeneratedValue(strategy=GenerationType.SEQUENCE)
 	int employee_id;
-	public Employee1(String first_name, String city, String profession) {
+	public Employee(String first_name, String city, String profession) {
 		super();
 		this.first_name = first_name;
 		this.city = city;

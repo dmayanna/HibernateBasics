@@ -9,7 +9,7 @@ public class ReadObject {
 	public static void main(String[] args) {
 		
 		// create session factory
-		SessionFactory fac = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(Employee2.class).buildSessionFactory();
+		SessionFactory fac = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(Employee.class).buildSessionFactory();
 		
 		// create session 
 		Session session = fac.getCurrentSession();
@@ -19,7 +19,7 @@ public class ReadObject {
 			session.beginTransaction();
 		
 			// retrieve student based on the id: primary key
-			Employee2 emp1 = session.get(Employee2.class,19269);
+			Employee emp1 = session.get(Employee.class,19312);
 		
 			System.out.println(emp1.getFirst_name());
 			

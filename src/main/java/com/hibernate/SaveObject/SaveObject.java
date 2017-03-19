@@ -17,7 +17,7 @@ public class SaveObject {
 		try{
 			// create a student object 
 			System.out.println("Creating a new employee object");
-			Employee emp = new Employee("Deekshith", "Mayanna", "smdeekshith@gmail.com");
+			Employee emp = new Employee("Deekshith", "Bangalore", "Software Engineer");
 			
 			// start a transaction 
 			session.beginTransaction();
